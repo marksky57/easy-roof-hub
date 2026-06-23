@@ -245,6 +245,91 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ============================================================
+   EMERGENCY SECTION
+   ============================================================ */
+.emergency-section {
+  background: #0D1F3C;
+  padding: 72px 24px;
+}
+.emergency-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.emergency-headline {
+  font-size: clamp(28px, 3.5vw, 36px);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+.emergency-sub {
+  font-size: 18px;
+  color: rgba(255,255,255,.85);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.emergency-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.emergency-list li {
+  font-size: 16px;
+  color: rgba(255,255,255,.9);
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+.emergency-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #FBBF24;
+  font-weight: 700;
+}
+.emergency-list strong {
+  color: #FBBF24;
+}
+.btn--emergency {
+  background: #FBBF24;
+  color: #0D1F3C;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 18px 36px;
+  border-radius: 50px;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 6px 24px rgba(251,191,36,.4);
+  transition: background .15s, transform .12s, box-shadow .15s;
+}
+.btn--emergency:hover {
+  background: #F59E0B;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(251,191,36,.55);
+  text-decoration: none;
+  color: #0D1F3C;
+}
+.emergency-image img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+@media (max-width: 768px) {
+  .emergency-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .emergency-image { order: -1; }
+}
+
+/* ============================================================
    CALL MODAL — desktop prompt
    ============================================================ */
 .call-modal {
