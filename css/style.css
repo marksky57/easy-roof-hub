@@ -345,13 +345,17 @@ p:last-child { margin-bottom: 0; }
   width: 100%;
   border-radius: 16px;
   display: block;
+  margin-bottom: 20px;
 }
+.emergency-cta-mobile { display: none; }
 @media (max-width: 768px) {
   .emergency-grid {
     grid-template-columns: 1fr;
     gap: 32px;
   }
   .emergency-image { order: -1; }
+  .emergency-cta-desktop { display: none; }
+  .emergency-cta-mobile { display: inline-block; width: 100%; text-align: center; }
 }
 
 /* ============================================================
