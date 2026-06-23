@@ -54,7 +54,13 @@
           <span class="logo-tagline">Trusted Local Roof Quotes</span>
         </div>
       </a>
-      <a href="#quote" class="btn btn--orange">Get a Free Quote</a>
+      <div class="header-right">
+        <div class="header-phone">
+          <a href="tel:+16028788983" class="header-phone-num js-call-btn" aria-label="Call (602) 878-8983">(602) 878-8983</a>
+          <span class="header-phone-avail">Available 24/7</span>
+        </div>
+        <a href="tel:+16028788983" class="btn btn--call js-call-btn">📞 Call Now</a>
+      </div>
     </div>
   </header>
 
@@ -64,14 +70,18 @@
        ============================================================ -->
   <section class="hero">
     <div class="container">
-      <span class="eyebrow" style="color:rgba(255,255,255,.6)">Serving Arizona Homeowners</span>
-      <h1>Arizona Roof Quotes<br>Made Simple</h1>
-      <p class="lead">Easy Roof Hub connects homeowners with trusted local roofing professionals — free, no-pressure, and straightforward.</p>
-      <a href="#quote" class="btn btn--orange btn--lg">Request a Free Quote</a>
+      <span class="eyebrow" style="color:rgba(255,255,255,.55)">Phoenix, AZ &nbsp;·&nbsp; Available 24/7</span>
+      <h1>Get a Free Roof Quote<br>in Phoenix</h1>
+      <p class="lead">Speak with our intake team now — we'll match you with a trusted local roofing contractor. Free, no obligation.</p>
+      <div class="hero-cta-wrap">
+        <a href="tel:+16028788983" class="btn btn--call js-call-btn" aria-label="Call (602) 878-8983">📞 Call Now</a>
+        <p class="hero-number">📞 (602) 878-8983 &nbsp;·&nbsp; Available 24/7</p>
+      </div>
+      <p class="hero-support">No obligation &nbsp;·&nbsp; Free estimates &nbsp;·&nbsp; Local contractors</p>
       <div class="trust-row">
-        <span class="trust-pill">✓ 100% Free</span>
-        <span class="trust-pill">✓ No Obligation</span>
-        <span class="trust-pill">✓ Local Arizona Roofers</span>
+        <span class="trust-pill">✓ 24/7 Availability</span>
+        <span class="trust-pill">✓ Local Phoenix Contractors</span>
+        <span class="trust-pill">✓ Free Estimates</span>
       </div>
     </div>
   </section>
@@ -89,18 +99,18 @@
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
-          <h3>Find Your Neighborhood</h3>
-          <p class="text-muted">Browse to your specific area page for local context and a tailored quote request form.</p>
+          <h3>Call Our Intake Team</h3>
+          <p class="text-muted">One call connects you with a live intake specialist — available 24/7. No hold music, no menus.</p>
         </div>
         <div class="step">
           <div class="step-num">2</div>
-          <h3>Submit Your Request</h3>
-          <p class="text-muted">Fill out a short form with your address and a few details about your roof. Takes under two minutes.</p>
+          <h3>We Capture Your Details</h3>
+          <p class="text-muted">We gather your address, the issue, and what you need. Takes about two minutes.</p>
         </div>
         <div class="step">
           <div class="step-num">3</div>
-          <h3>A Roofer Reaches Out</h3>
-          <p class="text-muted">A trusted local roofing professional contacts you to schedule an inspection and provide your quote.</p>
+          <h3>A Local Contractor Reaches Out</h3>
+          <p class="text-muted">A trusted Phoenix-area roofing contractor contacts you to schedule a free inspection and quote.</p>
         </div>
       </div>
     </div>
@@ -202,14 +212,14 @@
 
 
   <!-- ============================================================
-       LEAD FORM — homepage general request
+       LEAD FORM — backup / prefer-online option
        ============================================================ -->
   <section class="section section--blue" id="quote">
     <div class="container" style="max-width:540px">
 
       <div class="form-card">
-        <p class="form-title">Request a Free Roof Quote</p>
-        <p class="form-sub">No obligation. A local Arizona roofing professional will reach out within one business day.</p>
+        <p class="form-title">Prefer to Request Online?</p>
+        <p class="form-sub">Fill out the form and a local contractor will follow up within one business day. Or call us now — <a href="tel:+16028788983" class="js-call-btn" style="color:var(--orange);font-weight:700">(602) 878-8983</a> — for faster service.</p>
 
         <form id="quote-form" novalidate>
           <!-- Hidden fields: used by backend to track lead source -->
@@ -315,6 +325,23 @@
       <span>Owned and operated by ClearLine Answering Services LLC</span>
     </div>
   </footer>
+
+  <!-- ============================================================
+       CALL MODAL — desktop users only (JS shows/hides)
+       ============================================================ -->
+  <div id="call-modal" class="call-modal" hidden aria-modal="true" role="dialog" aria-label="Call Easy Roof Hub">
+    <div class="call-modal-backdrop"></div>
+    <div class="call-modal-box">
+      <button class="call-modal-close" id="call-modal-close" aria-label="Close">✕</button>
+      <div class="call-modal-icon" aria-hidden="true">📞</div>
+      <p class="call-modal-title">Call Now</p>
+      <a href="tel:+16028788983" class="call-modal-number">(602) 878-8983</a>
+      <p class="call-modal-avail">Available 24/7</p>
+      <p class="call-modal-msg">Our intake team will match you with a trusted local roofing contractor — free, no obligation.</p>
+      <button class="btn btn--orange btn--full call-modal-copy" id="copy-number-btn">Copy Number</button>
+      <p class="call-modal-fine">No obligation · Free estimates · Local Phoenix contractors</p>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
