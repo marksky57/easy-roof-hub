@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Copy number to clipboard
   copyBtn && copyBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText('6028788983').then(() => {
+    navigator.clipboard.writeText('(602) 878-8983').then(() => {
       copyBtn.textContent = 'Copied!';
       setTimeout(() => { copyBtn.textContent = 'Copy Number'; }, 2000);
     }).catch(() => {

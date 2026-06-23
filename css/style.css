@@ -174,22 +174,23 @@ p:last-child { margin-bottom: 0; }
 .btn--call {
   background: var(--orange);
   color: var(--white);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
-  padding: 20px 48px;
+  padding: 22px 56px;
   border-radius: 50px;
-  box-shadow: 0 4px 24px rgba(249,115,22,.38);
+  box-shadow: 0 6px 28px rgba(249,115,22,.45);
   letter-spacing: .01em;
-  transition: background .15s, box-shadow .15s, transform .1s;
+  transition: background .15s, box-shadow .15s, transform .12s;
+  display: inline-block;
 }
 .btn--call:hover {
   background: var(--orange-dark);
-  box-shadow: 0 6px 32px rgba(249,115,22,.52);
-  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(249,115,22,.6);
+  transform: translateY(-3px);
   text-decoration: none;
   color: var(--white);
 }
-.btn--call:active { transform: scale(.97); }
+.btn--call:active { transform: scale(.97); box-shadow: 0 3px 16px rgba(249,115,22,.4); }
 
 /* ============================================================
    HOMEPAGE HERO
@@ -197,49 +198,50 @@ p:last-child { margin-bottom: 0; }
 .hero {
   background: linear-gradient(140deg, #0D2960 0%, var(--blue) 55%, #3B72F0 100%);
   color: var(--white);
-  padding: 88px 24px 80px;
+  padding: 80px 24px 72px;
   text-align: center;
 }
-.hero h1 { color: var(--white); margin-bottom: 18px; }
+.hero h1 {
+  color: var(--white);
+  font-size: clamp(36px, 5.2vw, 58px);
+  line-height: 1.07;
+  font-weight: 800;
+  margin: 0 auto 24px;
+  max-width: 840px;
+}
 .hero .lead {
-  font-size: clamp(16px, 2.5vw, 19px);
-  color: rgba(255,255,255,.82);
-  max-width: 520px;
-  margin: 0 auto 36px;
+  font-size: clamp(17px, 2vw, 22px);
+  color: rgba(255,255,255,.95);
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.5;
+  font-weight: 400;
 }
 .hero-cta-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 20px;
+  gap: 16px;
+  margin-bottom: 28px;
 }
-.hero-number {
-  font-size: 15px;
+.hero-microcopy {
+  font-size: 14px;
   color: rgba(255,255,255,.6);
   margin: 0;
+  margin-top: -4px;
+}
+.hero-number {
+  font-size: 20px;
+  color: rgba(255,255,255,.85);
+  margin: 0;
+  font-weight: 600;
   letter-spacing: .01em;
 }
 .hero-support {
-  font-size: 14px;
-  color: rgba(255,255,255,.5);
+  font-size: 15px;
+  color: rgba(255,255,255,.65);
   margin-bottom: 0;
   letter-spacing: .01em;
-}
-.trust-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 28px;
-}
-.trust-pill {
-  background: rgba(255,255,255,.13);
-  border: 1px solid rgba(255,255,255,.22);
-  border-radius: 999px;
-  padding: 6px 16px;
-  font-size: 13px;
-  color: var(--white);
 }
 
 /* ============================================================
@@ -258,18 +260,18 @@ p:last-child { margin-bottom: 0; }
 .call-modal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,.55);
-  backdrop-filter: blur(3px);
+  background: rgba(0,0,0,.6);
+  backdrop-filter: blur(4px);
 }
 .call-modal-box {
   position: relative;
   background: var(--white);
-  border-radius: 16px;
-  padding: 44px 40px 36px;
-  max-width: 400px;
+  border-radius: 18px;
+  padding: 48px 44px 40px;
+  max-width: 420px;
   width: 100%;
   text-align: center;
-  box-shadow: 0 24px 60px rgba(0,0,0,.22);
+  box-shadow: 0 32px 80px rgba(0,0,0,.28);
 }
 .call-modal-close {
   position: absolute;
@@ -280,47 +282,73 @@ p:last-child { margin-bottom: 0; }
   font-size: 18px;
   color: var(--muted);
   cursor: pointer;
-  padding: 4px 8px;
+  padding: 6px 10px;
   line-height: 1;
   border-radius: 4px;
 }
 .call-modal-close:hover { color: var(--dark); background: var(--bg); }
-.call-modal-icon { font-size: 40px; margin-bottom: 12px; }
-.call-modal-title {
-  font-size: 14px;
+
+/* "Call Now" eyebrow label */
+.call-modal-label {
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: .12em;
   color: var(--muted);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
+
+/* Dominant number */
 .call-modal-number {
   display: block;
-  font-size: 34px;
+  font-size: clamp(32px, 8vw, 44px);
   font-weight: 800;
   color: var(--dark);
-  letter-spacing: -.02em;
-  margin-bottom: 4px;
+  letter-spacing: -.03em;
+  line-height: 1;
+  margin-bottom: 16px;
   text-decoration: none;
 }
 .call-modal-number:hover { color: var(--orange); text-decoration: none; }
-.call-modal-avail {
-  font-size: 13px;
-  color: var(--muted);
-  margin-bottom: 20px;
-}
+
 .call-modal-msg {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--body);
   line-height: 1.55;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
-.call-modal-copy { margin-bottom: 14px; cursor: pointer; }
-.call-modal-fine {
-  font-size: 12px;
+.call-modal-micro {
+  font-size: 13px;
   color: var(--muted);
-  margin: 0;
+  margin-bottom: 24px;
 }
+
+/* Primary call button inside modal */
+.call-modal-cta {
+  font-size: 18px;
+  padding: 16px 32px;
+  border-radius: 50px;
+  width: 100%;
+  margin-bottom: 14px;
+  text-decoration: none;
+  display: block;
+}
+.call-modal-cta:hover { text-decoration: none; color: var(--white); }
+
+/* Secondary copy button */
+.call-modal-copy-btn {
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  width: 100%;
+  transition: border-color .15s, color .15s;
+}
+.call-modal-copy-btn:hover { border-color: var(--dark); color: var(--dark); }
 
 /* ============================================================
    HOW IT WORKS — 3 steps
@@ -610,13 +638,14 @@ a.nbhd-card--soon:hover { border-color: var(--border); box-shadow: none; pointer
   .logo-tagline { display: none; }
   .logo-icon { height: 34px; }
 
-  /* Header — hide phone number, keep call button */
+  /* Header — hide phone number on mobile, keep call button compact */
   .header-phone { display: none; }
-  .btn--call { font-size: 15px; padding: 12px 22px; border-radius: 8px; box-shadow: none; }
+  .btn--call { font-size: 16px; padding: 14px 28px; border-radius: 50px; box-shadow: 0 4px 16px rgba(249,115,22,.35); }
 
   .section { padding: 48px 0; }
-  .hero { padding: 64px 20px 56px; }
-  .hero-number { display: none; } /* number already in header area on mobile via button */
+  .hero { padding: 56px 20px 52px; }
+  .hero-number { display: none; }
+  .hero .lead { font-size: clamp(16px, 4.5vw, 18px); }
 
   /* Stack: form first on mobile, content below */
   .nbhd-body {
