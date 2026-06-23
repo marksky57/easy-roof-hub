@@ -243,9 +243,14 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 0;
   letter-spacing: .01em;
 }
+.emergency-red {
+  color: #FF2020;
+  font-weight: 800;
+}
 .hero-emergency-link {
   display: inline-block;
-  margin-top: 20px;
+  margin-bottom: 28px;
+  margin-top: 0;
   background: rgba(255,255,255,.12);
   border: 1.5px solid rgba(255,255,255,.35);
   color: #fff;
