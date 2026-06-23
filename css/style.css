@@ -243,6 +243,26 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 0;
   letter-spacing: .01em;
 }
+.hero-emergency-link {
+  display: inline-block;
+  margin-top: 20px;
+  background: rgba(255,255,255,.12);
+  border: 1.5px solid rgba(255,255,255,.35);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: .01em;
+  transition: background .15s, border-color .15s;
+}
+.hero-emergency-link:hover {
+  background: rgba(255,255,255,.2);
+  border-color: rgba(255,255,255,.6);
+  text-decoration: none;
+  color: #fff;
+}
 
 /* ============================================================
    EMERGENCY SECTION
