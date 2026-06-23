@@ -89,23 +89,22 @@
     <div class="container">
       <span class="eyebrow text-center" style="display:block">How It Works</span>
       <h2 class="text-center">Three Simple Steps</h2>
-      <p class="text-center text-muted" style="max-width:460px;margin:0 auto">Getting a roof quote shouldn't take hours. Here's how Easy Roof Hub makes it easy.</p>
 
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
-          <h3>Call Our Intake Team</h3>
-          <p class="text-muted">One call connects you with a live intake specialist — available 24/7. No hold music, no menus.</p>
+          <h3>Call or Submit Online</h3>
+          <p class="text-muted">Call now or fill out the short form below. Takes about two minutes — no hold music, no menus.</p>
         </div>
         <div class="step">
           <div class="step-num">2</div>
-          <h3>We Capture Your Details</h3>
-          <p class="text-muted">We gather your address, the issue, and what you need. Takes about two minutes.</p>
+          <h3>We Match You with a Contractor</h3>
+          <p class="text-muted">We connect you with a vetted local roofing contractor who has strong reviews and a proven track record.</p>
         </div>
         <div class="step">
           <div class="step-num">3</div>
-          <h3>A Local Contractor Reaches Out</h3>
-          <p class="text-muted">A trusted Phoenix-area roofing contractor contacts you to schedule a free inspection and quote.</p>
+          <h3>Get Your Free Quote</h3>
+          <p class="text-muted">A licensed contractor reaches out to schedule a free inspection and walk you through your options.</p>
         </div>
       </div>
     </div>
@@ -148,120 +147,46 @@
 
 
   <!-- ============================================================
-       NEIGHBORHOODS
-       ✏️ Add a new <a class="nbhd-card"> for each live page.
-       Use <div class="nbhd-card nbhd-card--soon"> for placeholders.
-       ============================================================ -->
-  <section class="section" id="neighborhoods">
-    <div class="container">
-      <span class="eyebrow">Hyperlocal Coverage</span>
-      <h2>Neighborhoods We Serve</h2>
-      <p style="max-width:520px">We're building neighborhood-specific quote pages across the Phoenix metro. Find yours below, or submit a general request if it isn't listed yet.</p>
-
-      <div class="nbhd-grid">
-
-        <!-- ✏️ LIVE PAGE: copy this block for each published neighborhood -->
-        <a href="neighborhoods/desert-ridge-roof-quote.html" class="nbhd-card">
-          <span class="nbhd-name">Desert Ridge</span>
-          <span class="nbhd-sub">Phoenix, AZ</span>
-          <span class="nbhd-link">Get a Quote →</span>
-        </a>
-
-        <!-- ✏️ PLACEHOLDERS: replace href and labels as pages go live -->
-        <div class="nbhd-card nbhd-card--soon">
-          <span class="nbhd-name">Chandler</span>
-          <span class="nbhd-sub">Coming soon</span>
-        </div>
-        <div class="nbhd-card nbhd-card--soon">
-          <span class="nbhd-name">Gilbert</span>
-          <span class="nbhd-sub">Coming soon</span>
-        </div>
-        <div class="nbhd-card nbhd-card--soon">
-          <span class="nbhd-name">Peoria</span>
-          <span class="nbhd-sub">Coming soon</span>
-        </div>
-        <div class="nbhd-card nbhd-card--soon">
-          <span class="nbhd-name">Glendale</span>
-          <span class="nbhd-sub">Coming soon</span>
-        </div>
-        <div class="nbhd-card nbhd-card--soon">
-          <span class="nbhd-name">Tempe</span>
-          <span class="nbhd-sub">Coming soon</span>
-        </div>
-        <div class="nbhd-card nbhd-card--soon">
-          <span class="nbhd-name">Scottsdale</span>
-          <span class="nbhd-sub">Coming soon</span>
-        </div>
-        <div class="nbhd-card nbhd-card--soon">
-          <span class="nbhd-name">Mesa</span>
-          <span class="nbhd-sub">Coming soon</span>
-        </div>
-
-      </div>
-
-      <p style="margin-top:28px;font-size:14px" class="text-muted">
-        Don't see your neighborhood? <a href="#quote">Submit a general request</a> and we'll be in touch.
-      </p>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       LEAD FORM — backup / prefer-online option
+       LEAD FORM — secondary capture for non-callers
        ============================================================ -->
   <section class="section section--blue" id="quote">
-    <div class="container" style="max-width:540px">
+    <div class="container" style="max-width:480px">
 
       <div class="form-card">
-        <p class="form-title">Prefer to Request Online?</p>
-        <p class="form-sub">Fill out the form and a local contractor will follow up within one business day. Or call <a href="tel:+16028788983" class="js-call-btn" style="color:var(--orange);font-weight:700">(602) 878-8983</a> for faster service.</p>
+        <p class="form-title">Prefer to Get a Quote Online?</p>
 
         <form id="quote-form" novalidate>
-          <!-- Hidden fields: used by backend to track lead source -->
           <input type="hidden" name="source"       value="homepage" />
           <input type="hidden" name="neighborhood" value="General" />
 
           <div class="field">
-            <label for="name">Your Name</label>
+            <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Jane Smith" required />
           </div>
 
           <div class="field">
-            <label for="phone">Phone Number</label>
+            <label for="phone">Phone</label>
             <input type="tel" id="phone" name="phone" placeholder="(480) 555-1234" required />
           </div>
 
           <div class="field">
-            <label for="address">Property Address</label>
-            <input type="text" id="address" name="address" placeholder="1234 W Example Rd, Phoenix, AZ" required />
+            <label for="address">Address <span class="optional">(optional)</span></label>
+            <input type="text" id="address" name="address" placeholder="1234 W Example Rd, Phoenix, AZ" />
           </div>
 
           <div class="field">
-            <label for="roof_age">Approximate Roof Age</label>
-            <select id="roof_age" name="roof_age">
-              <option value="">— Select —</option>
-              <option value="under_10">Under 10 years</option>
-              <option value="10_15">10–15 years</option>
-              <option value="15_20">15–20 years</option>
-              <option value="20_plus">20+ years</option>
-              <option value="unknown">Not sure</option>
-            </select>
+            <label for="notes">Message <span class="optional">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Anything you'd like us to know"></textarea>
           </div>
 
-          <div class="field">
-            <label for="notes">Additional Details <span class="optional">(optional)</span></label>
-            <textarea id="notes" name="notes" placeholder="Any known issues, recent storm damage, etc."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn--orange btn--full">Get My Free Quote</button>
+          <button type="submit" class="btn btn--orange btn--full">Request a Quote</button>
           <p class="form-disclaimer">By submitting, you agree to be contacted by a local roofing professional. We never sell your information.</p>
         </form>
 
-        <!-- Thank-you message shown after submit -->
         <div id="form-success" class="form-success">
           <div class="ty-icon">✅</div>
           <h3>Request Received!</h3>
-          <p class="text-muted">Thank you. A trusted local roofing professional will contact you within one business day.</p>
+          <p class="text-muted">A licensed roofing contractor will reach out within one business day.</p>
         </div>
       </div>
 
@@ -294,11 +219,10 @@
       </div>
 
       <div class="footer-col">
-        <h4>Neighborhoods</h4>
+        <h4>Services</h4>
         <ul>
-          <li><a href="neighborhoods/desert-ridge-roof-quote.html">Desert Ridge</a></li>
-          <!-- ✏️ Add links here as new neighborhood pages go live -->
-          <li><a href="#neighborhoods">View All Areas</a></li>
+          <li><a href="#quote">Get a Free Quote</a></li>
+          <li><a href="tel:+16028788983">Call (602) 878-8983</a></li>
         </ul>
       </div>
 
