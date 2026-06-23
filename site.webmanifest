@@ -1,0 +1,17 @@
+{
+  "name": "Easy Roof Hub",
+  "short_name": "EasyRoofHub",
+  "description": "Trusted Local Roof Quotes for Arizona Homeowners",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1B4FCC",
+  "icons": [
+    {
+      "src": "/assets/favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

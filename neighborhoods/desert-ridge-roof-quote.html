@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--
+  ================================================================
+  HOW TO CLONE THIS PAGE FOR A NEW NEIGHBORHOOD
+  ================================================================
+  Search for every  ✏️  comment and update those values.
+  Everything else is reusable — leave it alone.
+
+  Quick checklist:
+    [ ] <title> and <meta description>
+    [ ] <link rel="canonical"> and og:url
+    [ ] Schema.org "name" and "areaServed"
+    [ ] H1 neighborhood name (hero)
+    [ ] Stats: build years, roof age range, city, zip codes
+    [ ] Info box sentence
+    [ ] H2 and body paragraphs
+    [ ] FAQ zip code answer
+    [ ] Form hidden fields: source + neighborhood
+    [ ] Form address placeholder zip
+    [ ] Save as  neighborhoods/your-neighborhood-roof-quote.html
+    [ ] Add link to index.html neighborhood grid + footer
+  ================================================================
+  -->
+
+  <!-- ✏️ SEO -->
+  <title>Desert Ridge Roof Quotes — Easy Roof Hub | Phoenix, AZ</title>
+  <meta name="description" content="Request a free roof quote in Desert Ridge, Phoenix AZ. Easy Roof Hub connects local homeowners with trusted roofing professionals. No pressure, no obligation." />
+  <!-- ✏️ Update slug -->
+  <link rel="canonical" href="https://easyroofhub.com/neighborhoods/desert-ridge-roof-quote" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Desert Ridge Roof Quotes — Easy Roof Hub" />
+  <meta property="og:description" content="Free, no-obligation roof quote request for Desert Ridge homeowners. Trusted local roofing professionals serving Phoenix, AZ." />
+  <!-- ✏️ Update og:url -->
+  <meta property="og:url"         content="https://easyroofhub.com/neighborhoods/desert-ridge-roof-quote" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Roof Quote Request — Desert Ridge",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Easy Roof Hub",
+      "url": "https://easyroofhub.com",
+      "legalName": "ClearLine Answering Services LLC"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Desert Ridge, Phoenix, AZ"
+    },
+    "serviceType": "Roofing Quote Request"
+  }
+  </script>
+
+  <!-- Favicon (paths relative to neighborhoods/) -->
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
+  <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.svg" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <meta name="theme-color" content="#1B4FCC" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="logo" aria-label="Easy Roof Hub — home">
+        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 32" fill="none" aria-hidden="true">
+          <polyline points="2,30 28,4 54,30" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Easy Roof <span class="logo-hub">Hub</span></span>
+          <span class="logo-tagline">Trusted Local Roof Quotes</span>
+        </div>
+      </a>
+      <a href="#quote" class="btn btn--orange">Get a Free Quote</a>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO
+       ✏️ Update: H1 neighborhood name, stats, subhead is reusable
+       ============================================================ -->
+  <section class="nbhd-hero">
+    <div class="container">
+
+      <p class="breadcrumb">
+        <a href="../index.html">Easy Roof Hub</a>
+        <span>›</span>
+        <a href="../index.html#neighborhoods">Neighborhoods</a>
+        <span>›</span>
+        <!-- ✏️ Neighborhood name -->
+        Desert Ridge
+      </p>
+
+      <!-- ✏️ H1: "[Neighborhood Name] Roof Quotes" -->
+      <h1>Desert Ridge Roof Quotes</h1>
+
+      <!-- Reusable — works for any neighborhood -->
+      <p class="subhead">Fast, local, no-pressure estimates from trusted roofing professionals.</p>
+
+      <div class="hero-cta">
+        <a href="#quote" class="btn btn--orange btn--lg">Request a Free Quote</a>
+      </div>
+
+      <!-- ✏️ Stats: update build years, roof age, city, zip codes -->
+      <div class="stats-row">
+        <div class="stat">
+          <strong>1995–2005</strong>
+          <span>Typical build years</span>
+        </div>
+        <div class="stat">
+          <strong>20–30 yrs</strong>
+          <span>Average roof age</span>
+        </div>
+        <div class="stat">
+          <strong>85050 · 85054</strong>
+          <span>Phoenix, AZ</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TWO-COLUMN: form left (sticky), content right
+       ============================================================ -->
+  <div class="nbhd-body">
+
+    <!-- FORM — sticky on desktop, first on mobile -->
+    <div class="nbhd-sidebar" id="quote">
+      <div class="form-card">
+
+        <!-- ✏️ Update neighborhood name in subtitle -->
+        <p class="form-title">Get Your Free Estimate</p>
+        <p class="form-sub">Desert Ridge · No obligation · Responds within 1 business day</p>
+
+        <form id="quote-form" novalidate>
+
+          <!-- ✏️ Update both hidden fields for each neighborhood page -->
+          <input type="hidden" name="source"       value="desert-ridge-roof-quote" />
+          <input type="hidden" name="neighborhood" value="Desert Ridge" />
+
+          <div class="field">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(480) 555-1234" required />
+          </div>
+
+          <div class="field">
+            <label for="address">Property Address</label>
+            <!-- ✏️ Update zip code in placeholder -->
+            <input type="text" id="address" name="address" placeholder="1234 E Example Dr, Phoenix, AZ 85050" required />
+          </div>
+
+          <div class="field">
+            <label for="issue_type">Type of Issue</label>
+            <select id="issue_type" name="issue_type">
+              <option value="">— Select one —</option>
+              <option value="leak">Leak</option>
+              <option value="aging_roof">Aging roof</option>
+              <option value="storm_damage">Storm damage</option>
+              <option value="replacement_quote">Replacement quote</option>
+              <option value="just_exploring">Just exploring</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="roof_age">Approximate Roof Age</label>
+            <select id="roof_age" name="roof_age">
+              <option value="">— Select —</option>
+              <option value="under_10">Under 10 years</option>
+              <option value="10_15">10–15 years</option>
+              <option value="15_20">15–20 years</option>
+              <option value="20_plus">20+ years</option>
+              <option value="unknown">Not sure</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="notes">Additional Details <span class="optional">(optional)</span></label>
+            <textarea id="notes" name="notes" placeholder="Anything else — visible damage, recent storms, etc."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--orange btn--full">Request My Free Quote</button>
+          <p class="form-disclaimer">By submitting, you agree to be contacted by a local roofing professional. We never sell your information.</p>
+
+        </form>
+
+        <!-- Thank-you message — shown after submit, no page reload -->
+        <div id="form-success" class="form-success">
+          <div class="ty-icon">✅</div>
+          <h3>Request Received!</h3>
+          <p class="text-muted">Thank you. A trusted roofing professional will reach out within one business day.</p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- CONTENT -->
+    <div class="nbhd-main">
+
+      <!-- Reusable for any neighborhood -->
+      <div class="authority-box">
+        We only connect homeowners with experienced roofing professionals familiar with homes in this area.
+      </div>
+
+      <!-- Reusable for any neighborhood -->
+      <div class="urgency-line">
+        ⏱ If your roof is 20–30 years old, this is exactly when many homeowners begin evaluating repair or replacement options.
+      </div>
+
+      <!-- ✏️ H2 and body: update neighborhood name and build years -->
+      <h2>Why Desert Ridge Homeowners Are Getting Quotes Now</h2>
+
+      <p>Desert Ridge is a master-planned community in north Phoenix built primarily between 1995 and 2005. Roofs from that era are now entering or past the typical service life for asphalt shingles in the Arizona climate.</p>
+
+      <p>Arizona's conditions are uniquely hard on roofing materials:</p>
+
+      <ul class="check-list">
+        <li>Intense UV exposure degrades shingles faster than most of the country</li>
+        <li>Monsoon moisture and wind create stress and potential for hidden leaks</li>
+        <li>Wide daily temperature swings cause expansion and contraction over time</li>
+      </ul>
+
+      <p>A free professional inspection takes the guesswork out of it — and gives you a clear picture of where your roof stands before a problem becomes expensive.</p>
+
+      <h3>Common Roofing Materials in This Area</h3>
+      <ul class="check-list">
+        <li>Architectural and 3-tab asphalt shingles (most common, built pre-2005)</li>
+        <li>Concrete and clay tile — durable, but underlayment may need replacement at 20+ years</li>
+        <li>Foam roofing on flat or low-slope sections</li>
+        <li>Some homes have a mix of materials across different roof sections</li>
+      </ul>
+
+      <h3>What Typically Affects Roofing Costs</h3>
+      <ul class="check-list">
+        <li>Roof pitch and how accessible it is</li>
+        <li>Number of penetrations — vents, skylights, chimneys</li>
+        <li>Full replacement vs. targeted repair</li>
+        <li>Material choice: shingle, tile, or foam re-coat</li>
+        <li>Condition of the decking underneath</li>
+      </ul>
+
+      <h3>Frequently Asked Questions</h3>
+
+      <p><strong>Is the quote request really free?</strong><br>
+      Yes — submitting a request costs nothing, and the professional inspection and written quote are also free.</p>
+
+      <p><strong>How soon will someone contact me?</strong><br>
+      Most homeowners hear back within one business day. During peak monsoon season it may take slightly longer.</p>
+
+      <p><strong>Am I obligated to hire anyone?</strong><br>
+      Not at all. You get a quote and decide what to do with it. No pressure, no obligation.</p>
+
+      <!-- ✏️ Update zip codes -->
+      <p><strong>What areas does this page cover?</strong><br>
+      This page serves the Desert Ridge area in north Phoenix — primarily zip codes 85050 and 85054.</p>
+
+    </div>
+
+  </div>
+
+
+  <!-- CTA -->
+  <section class="section section--alt">
+    <div class="container text-center">
+      <h2>Looking for a Different Area?</h2>
+      <p class="text-muted" style="max-width:400px;margin:0 auto 28px">Easy Roof Hub is expanding across the Phoenix metro. See all the neighborhoods we currently serve.</p>
+      <a href="../index.html#neighborhoods" class="btn btn--blue">View All Neighborhoods</a>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="../index.html" class="logo" aria-label="Easy Roof Hub — home">
+          <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 32" fill="none" aria-hidden="true">
+            <polyline points="2,30 28,4 54,30" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-name">Easy Roof <span class="logo-hub">Hub</span></span>
+            <span class="logo-tagline">Trusted Local Roof Quotes</span>
+          </div>
+        </a>
+        <p>Connecting Arizona homeowners with trusted local roofing professionals. Free quote requests, no pressure.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Neighborhoods</h4>
+        <ul>
+          <li><a href="desert-ridge-roof-quote.html">Desert Ridge</a></li>
+          <li><a href="../index.html#neighborhoods">View All Areas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../index.html#quote">Get a Free Quote</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2024 Easy Roof Hub · easyroofhub.com</span>
+      <span>Owned and operated by ClearLine Answering Services LLC</span>
+    </div>
+  </footer>
+
+  <!-- path relative to neighborhoods/ -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
