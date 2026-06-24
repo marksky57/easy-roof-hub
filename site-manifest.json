@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "site": {
+    "name": "Easy Roof Hub",
+    "domain": "easyroofhub.com",
+    "description": "Roofing quote platform connecting Arizona homeowners with vetted local contractors.",
+    "legal_entity": "ClearLine Answering Services LLC",
+    "logo_url": "/assets/logo/easy-roof-hub-logo.svg",
+    "theme_color": "#1B4FCC"
+  },
+  "contact": {
+    "primary_phone": "+16028788983",
+    "primary_phone_display": "(602) 878-8983",
+    "availability": "24/7",
+    "email": null,
+    "twilio": {
+      "routing_number": "+16028788983",
+      "sms_enabled": false,
+      "call_tracking": true,
+      "fallback_number": null
+    }
+  },
+  "services": [
+    {
+      "id": "roof-replacement",
+      "name": "Roof Replacement",
+      "active": true,
+      "description": "Full tear-off and replacement for aging or storm-damaged roofs."
+    },
+    {
+      "id": "roof-repair",
+      "name": "Roof Repair",
+      "active": true,
+      "description": "Targeted repairs for leaks, missing shingles, and flashing failures."
+    },
+    {
+      "id": "emergency-tarping",
+      "name": "Emergency Tarping",
+      "active": true,
+      "description": "Immediate temporary protection after storm damage or blow-off."
+    },
+    {
+      "id": "storm-damage-inspection",
+      "name": "Storm Damage Inspection",
+      "active": true,
+      "description": "Insurance-ready inspection reports for hail, wind, and monsoon damage."
+    },
+    {
+      "id": "roof-quote",
+      "name": "Free Roof Quote",
+      "active": true,
+      "description": "No-obligation estimate matched to a vetted local contractor."
+    }
+  ],
+  "locations": {
+    "primary_city": "Phoenix",
+    "primary_state": "AZ",
+    "primary_state_full": "Arizona",
+    "primary_zip": "85001",
+    "service_areas": [
+      "Phoenix",
+      "Scottsdale",
+      "Tempe",
+      "Mesa",
+      "Chandler",
+      "Gilbert",
+      "Glendale",
+      "Peoria",
+      "Surprise",
+      "Goodyear",
+      "Avondale",
+      "Queen Creek",
+      "Cave Creek",
+      "Fountain Hills",
+      "Desert Ridge"
+    ],
+    "geo": {
+      "lat": 33.4484,
+      "lng": -112.0740
+    }
+  },
+  "agent_config": {
+    "booking_enabled": false,
+    "lead_capture": "phone_and_form",
+    "lead_webhook": null,
+    "crm_integration": null,
+    "primary_cta": "call",
+    "after_hours_behavior": "voicemail_to_email"
+  }
+}
